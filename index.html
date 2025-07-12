@@ -1,105 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Metadados -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
-   
-    <title>Portifolio</title>
+    <title>Portfólio | Ricardo Issa</title>
 </head>
 
 <body>
-    <!-- Cabeçalho com navegação -->
     <header>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projeto">Projetos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Título principal -->
-    <h1 class="titulo">Bem vindo ao Meu Portfólio</h1>
-
-    <!-- Seção de descrição e imagem pessoal -->
-    <div>
-        <br id="descricao">
-        <img src="img/Pessoal.jpg" alt="Descrição da imagem" class="minha-imagem">
-        <p class="sobre" id="sobre">
-            Sou Ricardo Issa, estudante de Sistemas de Informação no Instituto Federal Goiano, Campus Urutaí. Tenho focado no desenvolvimento de software na Web, com experiência em linguagens como Java, HTML, CSS e JavaScript. Este portfólio reúne meus projetos, refletindo meu crescimento e dedicação em criar soluções inovadoras e funcionais. Sempre em busca de novos desafios, estou pronto para contribuir e aprender cada vez mais.
-        </p>
-    </div>
-
-    <!-- Seção principal com projetos -->
     <main>
-        <div>
+        <section class="hero">
+            <h1 class="titulo">Bem-vindo ao Meu Portfólio</h1>
+            <img src="img/Pessoal.jpg" alt="Ricardo Issa" class="minha-imagem">
+            <p class="sobre" id="sobre">
+                Sou Ricardo Issa, estudante de Sistemas de Informação no Instituto Federal Goiano, Campus Urutaí. Tenho focado no desenvolvimento de software na Web, com experiência em linguagens como Java, HTML, CSS e JavaScript. Este portfólio reúne meus projetos, refletindo meu crescimento e dedicação em criar soluções inovadoras e funcionais. Sempre em busca de novos desafios, estou pronto para contribuir e aprender cada vez mais.
+            </p>
+        </section>
+
+        <section id="projetos" class="container-projetos">
             <h2 class="titulo2">Meus Projetos</h2>
 
-            <section id="projeto">
-                <!-- Projeto 1 -->
-                <div class="projeto">
-                    <h3>Projeto 1: Meu Portfólio Pessoal</h3>
-                    <p>Foi desenvolvido para adicionar todos os projetos realizados durante o processo dos meus estudos.</p>
+            <h3 class="titulo-secao-projeto">Front-end</h3>
+            <div class="grid-projetos">
+                <article class="projeto-card">
+                    <h3>Meu Portfólio Pessoal</h3>
+                    <p>Desenvolvido para agrupar todos os projetos realizados durante meus estudos.</p>
                     <a href="https://ricardoissadesousa.github.io/Pagina-Pessoal/" target="_blank" class="botao-portifolio">Ver Projeto</a>
-                </div>
+                </article>
 
-                <!-- Projeto 2 -->
-                <div class="projeto">
-                    <h3>Projeto 2: Pagina de Eventos Abelvolks</h3>
-                    <p>Foi desenvolvido para promover um evento fictício da Abelvolks, o maior evento de som automotivo Trio Goiano do Brasil!</p>
+                <article class="projeto-card">
+                    <h3>Página de Eventos Abelvolks</h3>
+                    <p>Página para promover um evento fictício da Abelvolks, o maior evento de som automotivo Trio Goiano do Brasil!</p>
                     <a href="https://ricardoissadesousa.github.io/Pagina-de-eventos/" target="_blank" class="botao-portifolio">Ver Projeto</a>
-                </div>
+                </article>
 
-                <!-- Projeto 3 -->
-                <div class="projeto">
-                    <h3>Projeto 3: Loja Virtual Ricardo Eletro</h3>
-                    <p>Foi desenvolvido para adicionar funcionalidades como adicionar produtos ao carrinho e fazer os cálculos da quantidade dos produtos.</p>
+                <article class="projeto-card">
+                    <h3>Loja Virtual Ricardo Eletro</h3>
+                    <p>Desenvolvido para adicionar produtos ao carrinho e calcular o total da compra.</p>
                     <a href="https://ricardoissadesousa.github.io/Loja-Virtual/" target="_blank" class="botao-portifolio">Ver Projeto</a>
-                </div>
+                </article>
 
-                <!-- Projeto 4 -->
-                <div class="projeto">
-                    <h3>Projeto 4: Calculadora</h3>
-                    <p>Foi desenvolvido para adicionar matemática básica, com operações simples mas funcionais.</p>
+                <article class="projeto-card">
+                    <h3>Calculadora</h3>
+                    <p>Uma calculadora para operações matemáticas básicas, com interface simples e funcional.</p>
                     <a href="https://ricardoissadesousa.github.io/Calculadora/" target="_blank" class="botao-portifolio">Ver Projeto</a>
-                </div>
+                </article>
 
-                <!-- Projeto 5 -->
-                <div class="projeto">
-                    <h3>Projeto 5: Jogo da Velha</h3>
-                    <p>Foi desenvolvido um jogo simples para dois jogadores (X e O). O tabuleiro atualiza automaticamente as jogadas, com detecção de vencedor ou empate, e destaque das células vencedoras. Botão de reinício permite começar uma nova partida sem recarregar a página. Interface moderna e responsiva, com animações suaves e um layout atraente.</p>
+                <article class="projeto-card">
+                    <h3>Jogo da Velha</h3>
+                    <p>Jogo simples para dois jogadores (X e O) com detecção de vencedor, empate e opção de reinício.</p>
                     <a href="https://ricardoissadesousa.github.io/jogo-da-velha/" target="_blank" class="botao-portifolio">Ver Projeto</a>
-                </div>
+                </article>
 
-                <!-- Projeto 6 -->
-                <div class="projeto">
-                    <h3>Projeto 6: Projeto com Angular</h3>
-                    <p>Será desenvolvido usando o Angular, framework de desenvolvimento front-end de código aberto criado pelo Google.</p>
-                </div>
-            </section>
-        </div>
+              
+            </div>
+
+            <h3 class="titulo-secao-projeto">Back-end</h3>
+            <div class="grid-projetos">
+                <article class="projeto-card">
+                    <h3>ExpedFacil - API Rest Full </h3>
+                    <p>Sistema desenvolvido em Java usando o framework Spring Boot , para automatizar e digitalizar o processo de conferência de cargas na expedição 
+                        da empresa Oderich – Unidade Orizona, substituindo controles manuais em papel por uma solução eficiente, 
+                        rastreável e segura , onde Foi desenvolvido por 3 pessoas - Ricardo Issa de Sousa,
+                        Erick Gonçalves Maia, Rafael de Oliveira</p>
+                        <a href="https://github.com/RafaelSilva71/Expedfacil.git" target="_blank" class="botao-portifolio">Ver Projeto</a>
+                </article>
+                <article class="projeto-card">
+                    <h3>Facilitei - API Rest </h3>
+                    <p>Sistema desenvolvido em Java usando o framework Spring Boot , E uma plataforma para conectar Trabalhadores autonomos como Pedreiros, Eletricistas,
+                        Encanadores etc.. com Clintes(Comunidade), desenvolvido por 8 Pessoas em um projeto de extensão , Ricardo Issa de Sousa, Arthur Faria Estrela, Erick Gonçalves Maia, Sávio Issa de Sousa,
+                        Rafael de Oliveira Silva, João Victor Fernandes Alves, Jorge Afonso Rabelo De Araujo,
+                        Leandro Rosa da Silva.
+
+                    </p>
+                     <a href="https://github.com/MOR4Xx/Facilitei.git" target="_blank" class="botao-portifolio">Ver Projeto</a>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <!-- Rodapé com informações de contato -->
     <footer class="contato" id="contato">
-        <h3>Informação para contato</h3>
+        <h3>Informações para Contato</h3>
         <div class="social-links">
-            <!-- Link para o GitHub -->
-            <a href="https://github.com/ricardoissadesousa" target="_blank">
+            <a href="https://github.com/ricardoissadesousa" target="_blank" title="GitHub">
                 <img src="img/git.png" alt="GitHub" class="social-icon">
             </a>
-            
-            <!-- Link para o LinkedIn -->
-            <a href="https://www.linkedin.com/in/ricardo-issa-de-sousa-792560261" target="_blank">
-                <img src="img/link.png" alt="LinkedIn Logo" class="social-icon">
+            <a href="https://www.linkedin.com/in/ricardo-issa-de-sousa-792560261" target="_blank" title="LinkedIn">
+                <img src="img/link.png" alt="LinkedIn" class="social-icon">
             </a>
         </div>
+        <span>© 2024 - Desenvolvido por Ricardo Issa de Sousa</span>
     </footer>
 
-    <!-- Script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
